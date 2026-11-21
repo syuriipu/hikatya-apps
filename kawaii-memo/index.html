@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>かわいいメモ帳 サポート</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Zen+Maru+Gothic:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --pink: #ffbdea;
+    --pink-deep: #f07cc4;
+    --pale: #fbeef5;
+    --yellow: #ffe68a;
+    --ink: #4a3a44;
+    --faint: #8a7682;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--pale);
+    color: var(--ink);
+    font-family: "Zen Maru Gothic", "Hiragino Maru Gothic ProN", sans-serif;
+    line-height: 1.8;
+  }
+  header {
+    background: var(--pink);
+    padding: 40px 20px 32px;
+    text-align: center;
+  }
+  header img {
+    width: 96px; height: 96px;
+    border-radius: 22px;
+    box-shadow: 0 4px 12px rgba(160, 60, 120, 0.18);
+  }
+  h1 {
+    font-family: "Hachi Maru Pop", cursive;
+    font-weight: 400;
+    font-size: 30px;
+    margin: 16px 0 4px;
+  }
+  header p { margin: 0; color: var(--ink); opacity: 0.8; }
+  main { max-width: 640px; margin: 0 auto; padding: 24px 20px 48px; }
+  section {
+    background: #fff;
+    border-radius: 18px;
+    padding: 20px 22px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 8px rgba(160, 60, 120, 0.06);
+  }
+  h2 {
+    font-family: "Hachi Maru Pop", cursive;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0 0 10px;
+    padding-bottom: 6px;
+    border-bottom: 2px dotted var(--pink);
+  }
+  h3 { font-size: 16px; margin: 18px 0 4px; }
+  h3::before { content: "Q. "; color: var(--pink-deep); }
+  h3 + p { margin-top: 0; }
+  ul { padding-left: 1.3em; margin: 6px 0; }
+  .mail {
+    display: inline-block;
+    background: var(--pink-deep);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 999px;
+    font-weight: 700;
+    margin: 6px 0;
+    word-break: break-all;
+  }
+  .stores { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-top: 18px; }
+  .stores a {
+    background: #fff;
+    color: var(--ink);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 14px;
+  }
+  .note { color: var(--faint); font-size: 14px; }
+  footer { text-align: center; color: var(--faint); font-size: 13px; padding-bottom: 32px; }
+  footer a { color: var(--faint); }
+</style>
+</head>
+<body>
+<header>
+  <img src="icon.png" alt="かわいいメモ帳のアイコン">
+  <h1>かわいいメモ帳</h1>
+  <p>かわいいフォントと、きせかえで書けるメモ帳</p>
+  <div class="stores">
+    <a href="https://apps.apple.com/app/id1618169241">App Store</a>
+    <a href="https://play.google.com/store/apps/details?id=com.funeasysoft.memotyou">Google Play</a>
+  </div>
+</header>
+
+<main>
+  <section>
+    <h2>お問い合わせ</h2>
+    <p>不具合やご意見は、こちらのメールにお送りください。</p>
+    <a class="mail" href="mailto:hikatya.apps@gmail.com?subject=%E3%81%8B%E3%82%8F%E3%81%84%E3%81%84%E3%83%A1%E3%83%A2%E5%B8%B3%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">hikatya.apps@gmail.com</a>
+    <p class="note">不具合のときは、お使いの機種・OSのバージョン・アプリのバージョン（設定のいちばん下）と、どんなときに起きたかを書いていただけると助かります。<br>個人で作っているので、お返事に少しお時間をいただくことがあります。</p>
+  </section>
+
+  <section>
+    <h2>よくある質問</h2>
+
+    <h3>機種変更のとき、メモを引きつげますか？</h3>
+    <p>はい。設定の「バックアップ/復元」から、メモをファイルに書き出せます。そのファイルを新しいスマホに移して、同じ画面の「復元」から読みこんでください。iCloud Drive や Google ドライブなどに保存しておくと移しやすいです。</p>
+
+    <h3>パスワードを忘れてしまいました</h3>
+    <p>ロック画面の「パスワードを忘れたら」から、設定しておいたヒントを見られます。メモはスマホの中だけに保存されていて、こちらでは見ることも元に戻すこともできないため、パスワードのリセットはできません。パスワードを設定するときは、ヒントも入れておくのがおすすめです。</p>
+
+    <h3>ゴミ箱のメモが消えました</h3>
+    <p>バージョン1.5.0から、ゴミ箱のメモは30日たつと自動で消えるようになりました。ゴミ箱の中のメモには「あと○日」と表示されます。残しておきたいメモは、消える前に「復元」してください。</p>
+
+    <h3>前に使っていたフォントがなくなりました</h3>
+    <p>バージョン1.5.0で、安心して使えるライセンスのフォントに入れかえました。そのかわりに新しいフォントも増えています。ごめんなさい。使えるフォントとライセンスは、設定の「フォントのライセンス」で見られます。</p>
+
+    <h3>見出しやチェックリストを使いたい</h3>
+    <p>設定で「かんたんマークダウン」をオンにすると、行の先頭に <code>#</code>（見出し）、<code>-</code>（箇条書き）、<code>- [ ]</code>（チェックリスト）、<code>---</code>（区切り線）が使えます。</p>
+
+    <h3>メモはどこに保存されていますか？</h3>
+    <p>お使いのスマホの中だけです。インターネットに送られることはありません。くわしくは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p>
+  </section>
+</main>
+
+<footer>
+  <a href="privacy.html">プライバシーポリシー</a><br>
+  2022-2026 hikatya
+</footer>
+</body>
+</html>
